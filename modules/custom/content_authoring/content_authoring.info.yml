@@ -1,0 +1,12 @@
+name: 'Content Authoring'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - comment
+  - field
+  - image
+  - node
+  - path
+  - rdf
+  - text
+  - user

@@ -1,0 +1,7 @@
+campaign_landing.landing:
+  path: /landing
+  defaults:
+    _controller: '\Drupal\campaign_landing\Controller\PageController::index'
+    _title: 'Landing'
+  requirements:
+    _permission: 'access content'

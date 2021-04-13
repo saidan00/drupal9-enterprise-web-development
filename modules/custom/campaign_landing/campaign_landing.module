@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function campaign_landing_theme($existing, $type, $theme, $path)
+{
+    return [
+        'campaign_landing_template' => [
+            'variables' => [
+                'name' => NULL
+            ],
+        ],
+    ];
+}
+
+function campaign_landing_page_attachments(array &$variables)
+{
+    $variables['#attached']['library'][] = 'campaign_landing/global_styling';
+    $variables['#attached']['library'][] = 'campaign_landing/bootstrap_cdn';
+}
